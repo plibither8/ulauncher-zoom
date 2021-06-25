@@ -1,0 +1,37 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <clipPath id="a">
+    <path d="M-200-175H800v562H-200z"/>
+  </clipPath>
+  <clipPath id="b">
+    <circle cx="107" cy="106" r="102"/>
+  </clipPath>
+  <clipPath id="c">
+    <circle cx="107" cy="106" r="100"/>
+  </clipPath>
+  <clipPath id="d">
+    <circle cx="107" cy="106" r="92"/>
+  </clipPath>
+  <clipPath id="e">
+    <path clip-rule="evenodd" d="M135 94.06l26-19c2.27-1.85 4-1.42 4 2V135c0 3.84-2.16 3.4-4 2l-26-19zM47 77.2v43.2A17.69 17.69 0 0064.77 138h63a3.22 3.22 0 003.23-3.2V91.6A17.69 17.69 0 00113.23 74h-63A3.22 3.22 0 0047 77.2z"/>
+  </clipPath>
+  <g clip-path="url(#a)" transform="translate(0 -178)">
+    <path d="M232 61h366v90H232z" fill="#4a8cff"/>
+  </g>
+  <g clip-path="url(#a)" transform="matrix(.15686 0 0 .15686 -.784 -.627)">
+    <g clip-path="url(#b)">
+      <path d="M0-1h214v214H0z" fill="#e5e5e4"/>
+    </g>
+    <g clip-path="url(#c)">
+      <path d="M2 1h210v210H2z" fill="#fff"/>
+    </g>
+    <g clip-path="url(#d)">
+      <path d="M10 9h194v194H10z" fill="#4a8cff"/>
+    </g>
+    <g clip-path="url(#e)">
+      <path d="M42 69h128v74H42z" fill="#fff"/>
+    </g>
+  </g>
+  <g clip-path="url(#a)" transform="translate(0 -178)">
+    <path d="M232 19.25h180v38.17H232z" fill="#90908f"/>
+  </g>
+</svg>

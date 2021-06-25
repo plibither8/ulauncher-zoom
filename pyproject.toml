@@ -1,0 +1,28 @@
+[project]
+name = "ulauncher-nord"
+version = "0.1.0"
+description = "Connect to NordVPN using Ulauncher"
+authors = [
+    "Mihir Chaturvedi <plibither8@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+python = "^3.6"
+homepage = "https://github.com/plibither8/ulauncher-nord"
+repository = "https://github.com/plibither8/ulauncher-nord"
+documentation = "https://github.com/plibither8/ulauncher-nord"
+
+keywords = ["ulauncher", "extension", "nordvpn", "nord", "vpn"]
+
+classifiers = [
+    "Topic :: Desktop Environment"
+]
+
+# Requirements
+[dev-dependencies]
+black = { version = "^18.3-alpha.0", python = "^3.6" }
+
+[tool.black]
+line-length = 88
+target_version = ['py36']
+include = '\.pyi?$'
