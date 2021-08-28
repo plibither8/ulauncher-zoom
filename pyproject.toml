@@ -1,18 +1,18 @@
 [project]
 name = "ulauncher-nord"
 version = "0.1.0"
-description = "Connect to NordVPN using Ulauncher"
+description = "Join a Zoom meeting quickly using Ulauncher"
 authors = [
     "Mihir Chaturvedi <plibither8@gmail.com>"
 ]
 license = "MIT"
 readme = "README.md"
 python = "^3.6"
-homepage = "https://github.com/plibither8/ulauncher-nord"
-repository = "https://github.com/plibither8/ulauncher-nord"
-documentation = "https://github.com/plibither8/ulauncher-nord"
+homepage = "https://github.com/plibither8/ulauncher-zoom"
+repository = "https://github.com/plibither8/ulauncher-zoom"
+documentation = "https://github.com/plibither8/ulauncher-zoom"
 
-keywords = ["ulauncher", "extension", "nordvpn", "nord", "vpn"]
+keywords = ["ulauncher", "extension", "zoom"]
 
 classifiers = [
     "Topic :: Desktop Environment"
