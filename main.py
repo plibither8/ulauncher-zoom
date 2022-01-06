@@ -75,9 +75,9 @@ class ZoomExtension(Extension):
         items = []
         with self.history_file_path.open('r') as history_file:
             data = history_file.readlines()
-
-            if len(data) == 0:
+            if len(data) == 0 or data[0] == "\n":
                 return "empty"
+            
 
             for meeting in data:
                 data = meeting.split("#")
