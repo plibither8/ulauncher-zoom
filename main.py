@@ -63,9 +63,29 @@ class ZoomExtension(Extension):
         self.subscribe(PreferencesUpdateEvent, PreferencesUpdateEventListener())
         self.zoom = Zoom()
 
-    def get_meeting_ext_result_items(self, query):
-        query = query.lower() if query else ""
+    def get_meeting_ext_result_items(self, query, open_with_id):
         items = []
+
+        if open_with_id == "True":
+            try:
+                int(query)
+            except Exception:
+                pass
+            else:
+                items.append(
+                    ExtensionResultItem(
+                        icon=Utils.get_path("images/icon.svg"),
+                        name=f"Open meeting with id: {query}",
+                        on_enter=ExtensionCustomAction(
+                            {
+                                "meeting_id": query,
+                                "password": False,
+                            }
+                        ),
+                    )
+                )
+
+        query = query.lower() if query else ""
         data = list(
             filter(
                 (
@@ -112,7 +132,8 @@ class KeywordQueryEventListener(EventListener):
             return RenderResultListAction(items)
 
         argument = event.get_argument() or ""
-        items.extend(extension.get_meeting_ext_result_items(argument))
+        items.extend(extension.get_meeting_ext_result_items(argument,
+                                                            extension.preferences['open_with_id']))
         return RenderResultListAction(items)
 
 
