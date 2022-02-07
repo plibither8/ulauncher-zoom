@@ -10,6 +10,16 @@
       "type": "keyword",
       "name": "Trigger keyword",
       "default_value": "zm"
+    },
+    {
+      "id": "open_with_id",
+      "type": "select",
+      "name": "Open meetings directly with the id",
+      "description": "Open a meeting for one time by typing the id in Ulauncher.",
+      "options": [{"value": "True", "text": "yes"},
+                  {"value": "False", "text": "no"}
+                  ],
+      "default_value": "True"
     }
   ]
 }
